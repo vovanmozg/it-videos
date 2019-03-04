@@ -1,0 +1,90 @@
+<html>
+<head>
+    <style>
+        .hidden { display: none; }
+    </style>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="./videos.js"></script>
+<script>
+    // https://bootsnipp.com/snippets/Obq2V
+    function init() {
+        
+        
+        window.videos.forEach((data) => {
+            const item = $('#template').clone().removeClass('hidden').removeAttr('id');
+            
+            item.find('.date-js').text(data.date)
+            if (data.url) {
+                item.find('.title-js').html('<a href="'+data.url+'">'+data.title+'</a>')
+            } else {
+                item.find('.title-js').text(data.title)
+            }
+
+            item.appendTo("#postlist");
+        })
+    }
+
+
+    function appendPost(data) {
+
+    }
+
+
+</script>
+</head>
+
+<!------ Include the above in your HEAD tag ---------->
+<body onload="init()">
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <div id="postlist">
+                <div class="panel hidden" id="template">
+
+                    <div class="col-sm-2 date-js">0000-00-00</div>
+                    <div class="col-sm-10 title-js">............</div>
+
+                    <!-- div class="panel-heading">
+
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="title-js">Дмитрий Павлов, Антон Бевзюк, Domain Driven Design. Как писать простой код для сложных систем?</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em class="date-js">2014-07-30</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+
+                    </div>
+
+                    <div class="panel-body">
+                        <a href="#" class="thumbnail">
+                   
+                            <iframe id="ytplayer" type="text/html" width="640" height="360" src="http://www.youtube.com/embed/SpLJq7OAIQ0" frameborder="0"/>
+                        </a>
+                        <div class="description-js"></div>
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">Image</span> <span class="label label-default">Updates</span>
+                        <span class="label label-default">July</span>
+                    </div>
+                </div -->
+
+            </div>
+            <!-- div class="text-center"><a href="#" id="loadmore" class="btn btn-primary">Older Posts...</a></div -->
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+</div>
+</body>
+</html>
