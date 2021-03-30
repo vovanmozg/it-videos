@@ -1,4 +1,4 @@
-require_relative 'app'
+require_relative './app/app'
 
 run ->(env) {
   Resque.enqueue(Index::IndexJob)

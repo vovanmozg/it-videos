@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Все публикации подряд</title>
+    <link>https://habr.com/ru/all/all/</link>
+    <description><![CDATA[Все публикации подряд на Хабре]]></description>
+    <language>ru</language>
+    <managingEditor>editor@habr.com</managingEditor>
+    <generator>habr.com</generator>
+    <pubDate>Thu, 04 Jun 2020 03:33:29 GMT</pubDate>
+
+    <image>
+      <link>https://habr.com/ru/</link>
+      <url>https://habr.com/images/logo.png</url>
+      <title>Хабр</title>
+    </image>
+
+    <item>
+      <title><![CDATA[Apple предупредила мародёров, что отследит все украденные телефоны]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/505212/</guid>
+      <link>https://habr.com/ru/post/505212/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=505212</link>
+      <description><![CDATA[<img src="https://habrastorage.org/webt/ii/ed/71/iied71nwvo08eu4cdr2s4sas7se.jpeg"><br>
+<br>
+В десятках городов США продолжаются погромы и массовые беспорядки. Среди разграбленных оказались в том числе фирменные магазины Apple Store. Для многомиллиардной компании несколько тысяч украденных устройств не имеют никакого значения с точки зрения прибыли. Но она <a href="https://www.forbes.com/sites/zakdoffman/2020/06/01/apple-warns-looters-with-stolen-iphones-you-are-being-tracked/" rel="nofollow">предупредила воришек</a>, что отследит каждый iPhone, украденный из фирменных магазинов.<br>
+<br>
+Исполнительный директор Тим Кук разослал сотрудникам <a href="https://www.bloomberg.com/news/articles/2020-05-31/apple-s-cook-says-painful-past-is-still-present-today-in-memo" rel="nofollow">письмо</a> со словами, что компания всегда выступала против расизма и нарушения прав человека. Несмотря на формальную поддержку протестующих, Apple всё равно стала одной из жертв грабежей.<br> <a href="https://habr.com/ru/post/505212/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=505212#habracut">Читать дальше &rarr;</a>]]></description>
+
+      <pubDate>Wed, 03 Jun 2020 16:12:49 GMT</pubDate>
+      <dc:creator>GlobalSign_admin</dc:creator>
+      <category><![CDATA[Блог компании GlobalSign]]></category>
+      <category><![CDATA[Информационная безопасность]]></category>
+      <category><![CDATA[Законодательство в IT]]></category>
+      <category><![CDATA[Смартфоны]]></category>
+      <category><![CDATA[Apple]]></category>
+      <category><![CDATA[слежка]]></category>
+      <category><![CDATA[беспорядки]]></category>
+      <category><![CDATA[грабеж]]></category>
+      <category><![CDATA[мародерство]]></category>
+      <category><![CDATA[отслеживание телефона]]></category>
+    </item>
+
+
+    <item>
+      <title><![CDATA[Плохой руководитель – инструкция по эксплуатации]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/505196/</guid>
+      <link>https://habr.com/ru/post/505196/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=505196</link>
+      <description>
+        <![CDATA[Я пишу эту статью для своих бывших коллег и знакомых. Раз за разом по неопытности они попадают в одни и те же проблемы с непосредственным руководством. Но их ситуации далеко не уникальны, и эти советы могут помочь многим сделать свою жизнь лучше.<br> <a href="https://habr.com/ru/post/505196/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=505196#habracut">Читать дальше &rarr;</a>]]></description>
+
+      <pubDate>Wed, 03 Jun 2020 15:05:48 GMT</pubDate>
+      <dc:creator>idimus</dc:creator>
+      <category><![CDATA[Карьера в IT-индустрии]]></category>
+      <category><![CDATA[черт знает что]]></category>
+    </item>
+
+
+
+
+  </channel>
+</rss>

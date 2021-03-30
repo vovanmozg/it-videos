@@ -10,36 +10,7 @@
 # поискать похожие видео
 # сохранить новые видео в репозиторий
 
-
-require 'rubygems'
-require 'bundler/setup'
-require 'open-uri'
-Bundler.require(:default)
-
-uri = URI.parse("redis://localhost:6379/")
-Resque.redis = Redis.new(:host => uri.host, :port => uri.port)
-
-Resque.logger.level = Logger::DEBUG
-
-Mongoid.load!("./config/mongoid.yml", :production)
-
-
-# class MyInflector < Zeitwerk::Inflector
-#   def camelize(basename, _abspath)
-#
-#     r = super
-#     #return 'LinksSet' if basename == 'links_set_model'
-#     p '------------', basename, _abspath
-#     p r
-#     r
-#   end
-# end
-
-loader = Zeitwerk::Loader.new
-# loader.inflector = MyInflector.new
-loader.push_dir('./packages')
-loader.setup
-
+require_relative './init'
 
 # взять все источники ссылок на видео и запустить джобы на парсинг
 def check_link_sets
@@ -75,7 +46,15 @@ end
 
 
 
-UpdatableSource::UpdatableSourceJob.perform
+2.times do
+  puts '...'
+  LinksContainer::LinksContainerJob.async.perform
+  sleep 1
+end
+
+puts '.............................'.red
+p LinksContainer::LinksContainerModel.count
+
 
 
 #<meta property="og:url" content="https://www.youtube.com/watch?v=_Unj-6ua1CI">

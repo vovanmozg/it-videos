@@ -1,6 +1,0 @@
-production:
-  clients:
-    default:
-      database: itvideos
-      hosts:
-        - localhost:27017

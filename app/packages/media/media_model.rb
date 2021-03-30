@@ -1,16 +1,17 @@
 module Media
-# Contains video source (etc. Youtube)
-  class MediaModel
-    include Mongoid::Document
-    include Mongoid::StoreIn
+  # Contains video source (etc. Youtube)
+  class MediaModel < AppRecord
     include Log::Loggable
     include AASM
 
-    field :url, type: String
-    field :content, type: String
-    field :meta, type: Hash, default: {}
+    self.table_name = 'medias'
+    serialize :meta
 
-    field :aasm_state
+    #field :url, type: String
+    #field :content, type: String
+    #field :meta, type: Hash, default: {}
+
+    #field :aasm_state
     aasm whiny_transitions: true do
       state :waiting, initial: true
       state :running, after_enter: :run
@@ -36,7 +37,7 @@ module Media
 
     # Download meta
     def download
-      log_debug('MediaModel#download')
+      log_debug("MediaModel#download: #{url}")
       parse!
     end
 
