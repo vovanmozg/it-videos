@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # production
 gem 'aasm', '~> 5.0'
-gem 'activerecord', '~> 5.2'
+gem 'activerecord', '~> 6.1'
 gem 'after_commit_everywhere', '~> 0.1', '>= 0.1.5'
 gem 'colored', '~> 1.2'
 gem 'god', '~> 0.13.7'
